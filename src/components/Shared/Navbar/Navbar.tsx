@@ -76,7 +76,7 @@ const Navbar = () => {
                       <MdKeyboardArrowDown className="text-2xl mt-1" />
                     )}
                   </a>
-                  <ul className="absolute left-0 hidden group-hover:block bg-white shadow-lg p-2 mt-1 rounded">
+                  <ul className="absolute left-0 hidden group-hover:block bg-white shadow-lg p-2 mt-1 rounded md:w-[230px]">
                     <li>
                       <a href="#" className="block px-4 py-2 hover:bg-gray-100">
                         Vegetables
@@ -85,6 +85,16 @@ const Navbar = () => {
                     <li>
                       <a href="#" className="block px-4 py-2 hover:bg-gray-100">
                         fruits
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" className="block px-4 py-2 hover:bg-gray-100">
+                        Snaks
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" className="block px-4 py-2 hover:bg-gray-100">
+                        Lunce
                       </a>
                     </li>
                   </ul>
@@ -113,10 +123,7 @@ const Navbar = () => {
             </ul>
           </div>
 
-          <div className="py-3 border-l border-r border-[#ccc] -my-1 bg-[#299e60] hover:bg-[#258e56] text-white">
-            {/* <ul className="flex space-x-4">
-              <li className=" py-4 border-l border-r border-[#ccc] ">hey</li>
-            </ul> */}
+          <div className="py-3  bg-[#299e60] hover:bg-[#258e56] text-white">
             <div className="flex items-center gap-2 px-3 ">
               <FiPhoneCall />
               <h2 className="text-2xl font-semibold">01- 234 567 890</h2>
