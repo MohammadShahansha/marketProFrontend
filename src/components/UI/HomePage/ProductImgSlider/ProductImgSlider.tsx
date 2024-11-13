@@ -42,32 +42,32 @@ const ProductImgSlider = () => {
     prevArrow: <PrevArrow />,
   };
   return (
-    // <div className="overflow-hidden">
-    <Slider {...styleOfSlide}>
-      {imgList.map((item, index) => {
-        return (
-          <div key={index} className="mx-5">
-            <div
-              className="rounded-full h-[150px] w-[150px]  flex justify-center items-center cursor-pointer"
-              style={{
-                backgroundColor: `${item?.bgColor}`,
-              }}
-            >
-              <Image src={item.image} alt="feature image"></Image>
-            </div>
-            <div className="h-[150px] w-[150px] mt-2">
-              <div className="flex justify-center text-xl hover:text-textSecondaryColor font-semibold font-serif cursor-pointer">
-                <h2>Fish & meats</h2>
+    <div className="mb-[-30px] md:mx-7">
+      <Slider {...styleOfSlide} className="">
+        {imgList.map((item, index) => {
+          return (
+            <div key={index} className="">
+              <div
+                className="rounded-full h-[150px] w-[150px]  flex justify-center items-center cursor-pointer"
+                style={{
+                  backgroundColor: `${item?.bgColor}`,
+                }}
+              >
+                <Image src={item.image} alt="feature image"></Image>
               </div>
-              <div className="flex justify-center text-[#999] mt-2">
-                <p>125+ Products</p>
+              <div className="h-[150px] w-[150px] mt-5">
+                <div className="flex justify-center text-xl hover:text-textSecondaryColor font-semibold font-quickSans cursor-pointer">
+                  <h2>Fish & meats</h2>
+                </div>
+                <div className="flex justify-center text-[#999] mt-2">
+                  <p>125+ Products</p>
+                </div>
               </div>
             </div>
-          </div>
-        );
-      })}
-    </Slider>
-    // </div>
+          );
+        })}
+      </Slider>
+    </div>
   );
 };
 

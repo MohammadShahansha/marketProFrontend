@@ -8,7 +8,7 @@ const NextArrow = (props: any) => {
   const { onClick } = props;
   return (
     <div
-      className="absolute right-2 transform -translate-y-1/2 hover:text-white border-[#ccc] text-[#999] rounded-full p-2 cursor-pointer border"
+      className="absolute transform -translate-y-1/2 hover:text-white border-[#ccc] text-[#999] rounded-full p-2 cursor-pointer border"
       onClick={onClick}
       onMouseEnter={() => setIsHover(true)}
       onMouseLeave={() => setIsHover(false)}
@@ -21,7 +21,8 @@ const NextArrow = (props: any) => {
         display: "flex",
         alignItems: "center",
         borderColor: "#ccc",
-        top: "60px",
+        right: "10px",
+        top: "50%",
         zIndex: 20,
       }} // Ensure the button is large enough
     >

@@ -8,6 +8,9 @@ import img2 from "@/assets/banner/banner-img3.png";
 import img3 from "@/assets/banner/flash-sale-img1.png";
 import bgImg from "@/assets/banner/banner-bg.png";
 import Image from "next/image";
+import NextArrow from "@/utils/Arrows/NextArrow";
+import PrevArrow from "@/utils/Arrows/PrevArrow";
+import { FiShoppingCart } from "react-icons/fi";
 
 const Banner = () => {
   const settings = {
@@ -16,13 +19,14 @@ const Banner = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrows: true,
+    nextArrow: <NextArrow />, // pass function references, not JSX
+    prevArrow: <PrevArrow className=" bg-slate-500" />,
   };
 
   const slidesData = [
     {
       title: "Slide 1",
-      description: "This is the first slide description.",
+      description: "Daily Grocery Order and Get Express Delevery",
       imageUrl: img1,
     },
     {
@@ -37,31 +41,39 @@ const Banner = () => {
     },
   ];
 
+  // const buttonComponents = {
+  //   name: "Explore Shop",
+  //   icon: <FiShoppingCart/>,
+
+  // }
+
   return (
     <div
-      className="bg-cover bg-center bg-no-repeat mb-10"
+      className="bg-cover bg-center bg-no-repeat my-10 bg-[#d8ecc4] rounded-[22px] md:mx-7 "
       style={{ backgroundImage: `url(${bgImg.src})` }}
     >
       <Slider {...settings}>
         {slidesData.map((slide, index) => (
-          <div
-            key={index}
-            className="flex items-center justify-center  text-white "
-          >
-            <div className="flex items-center justify-between w-4/5 mx-auto p-4 bg-black/70 rounded-lg">
+          <div key={index} className="flex items-center justify-center ">
+            <div className="flex items-center justify-between mx-auto h-[500px] p-4 rounded-lg md:mx-20">
               {/* Text Section */}
-              <div className="w-1/2 p-4">
-                <h2 className="text-3xl font-bold">{slide.title}</h2>
-                <p className="mt-2">{slide.description}</p>
+              <div className="w-3/5 p-4">
+                <h2 className="text-[60px] font-quickSans text-[#121535] font-semibold">
+                  Daily Grocery Order and Get Express Delevery
+                </h2>
+
+                <button className="flex items-center gap-2 bg-bgPrimaryColor hover:bg-bgHoverColor px-10 py-3 mt-10 rounded-md text-white text-lg">
+                  Explore Shop <FiShoppingCart />
+                </button>
               </div>
               {/* Image Section */}
-              <div className="w-1/2 flex justify-center">
+              <div className="flex justify-center">
                 {/* <img src={slide.imageUrl} alt={`Slide ${index + 1}`} className="rounded-lg max-w-full" /> */}
                 <Image
                   src={slide.imageUrl}
                   alt="slider image"
-                  width={300}
-                  height={300}
+                  width={400}
+                  height={400}
                 />
               </div>
             </div>

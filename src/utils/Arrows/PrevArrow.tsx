@@ -7,7 +7,7 @@ const PrevArrow = (props: any) => {
   const [isHover, setIsHover] = useState(false);
   return (
     <div
-      className="absolute transform left-0 -translate-y-1/2 cursor-pointer flex items-center rounded-full border"
+      className="absolute transform  -translate-y-1/2 cursor-pointer border rounded-full "
       onMouseEnter={() => setIsHover(true)}
       onMouseLeave={() => setIsHover(false)}
       onClick={onClick}
@@ -21,7 +21,7 @@ const PrevArrow = (props: any) => {
         justifyContent: "center",
         borderColor: "#ccc",
         left: "10px",
-        top: "60px",
+        top: "50%",
         zIndex: 20,
       }}
     >

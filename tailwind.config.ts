@@ -12,9 +12,13 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
         bgPrimaryColor: "var(--bg-primary-color)",
+        bgHoverColor: "var(--bg-hover-color)",
         textPrimaryColor: "var(--text-primary-color)",
         textSecondaryColor: "var(--text-secondary-color)",
         borderPrimaryColor: "var(--border-primary-color)",
+      },
+      fontFamily: {
+        quickSans: ["Quicksand", "sans-serif"],
       },
     },
   },
