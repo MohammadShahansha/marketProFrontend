@@ -27,3 +27,12 @@ body {
   --text-secondary-color: #299e60;
   --border-primary-color: #ccc;
 }
+/* 
+.slick-slide {
+  background-size: cover !important;
+  background-position: center !important;
+}
+.slick-slide > div {
+  background-size: cover !important;
+  background-position: center !important;
+} */

@@ -3,7 +3,7 @@ import { useState } from "react";
 import { SlArrowRight } from "react-icons/sl";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-const NextArrow = (props: any) => {
+const SideNextArrow = (props: any) => {
   const [isHover, setIsHover] = useState(false);
   const { onClick } = props;
   return (
@@ -22,7 +22,7 @@ const NextArrow = (props: any) => {
         alignItems: "center",
         borderColor: "#ccc",
         right: "10px",
-        top: "50%",
+        top: "-80px",
 
         zIndex: 20,
       }} // Ensure the button is large enough
@@ -32,4 +32,4 @@ const NextArrow = (props: any) => {
   );
 };
 
-export default NextArrow;
+export default SideNextArrow;

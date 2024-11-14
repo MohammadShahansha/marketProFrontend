@@ -1,35 +1,32 @@
 "use client";
 import { useState } from "react";
-import { SlArrowRight } from "react-icons/sl";
-
+import { SlArrowLeft } from "react-icons/sl";
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-const NextArrow = (props: any) => {
-  const [isHover, setIsHover] = useState(false);
+const SidePrevArrow = (props: any) => {
   const { onClick } = props;
+  const [isHover, setIsHover] = useState(false);
   return (
     <div
-      className="absolute transform -translate-y-1/2 hover:text-white border-[#ccc] text-[#999] rounded-full p-2 cursor-pointer border"
-      onClick={onClick}
+      className="absolute transform  -translate-y-1/2 cursor-pointer border rounded-full "
       onMouseEnter={() => setIsHover(true)}
       onMouseLeave={() => setIsHover(false)}
+      onClick={onClick}
       style={{
         width: "40px",
         height: "40px",
-        // backgroundColor: "green",
         backgroundColor: isHover ? "#299e60" : "white",
         color: isHover ? "white" : "#999",
         display: "flex",
         alignItems: "center",
+        justifyContent: "center",
         borderColor: "#ccc",
-        right: "10px",
-        top: "50%",
-
+        right: "55px",
+        top: "-80px",
         zIndex: 20,
-      }} // Ensure the button is large enough
+      }}
     >
-      <SlArrowRight className="" size={20} />
+      <SlArrowLeft className="flex items-center" />
     </div>
   );
 };
-
-export default NextArrow;
+export default SidePrevArrow;
