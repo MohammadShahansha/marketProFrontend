@@ -1,0 +1,12 @@
+/* Remove the progress dots */
+.no-dots::-webkit-slider-runnable-track {
+  background-image: none !important; /* Chrome/Safari */
+}
+
+.no-dots::-moz-range-track {
+  background-image: none !important; /* Firefox */
+}
+
+.no-dots::-ms-track {
+  background-image: none !important; /* IE/Edge */
+}
