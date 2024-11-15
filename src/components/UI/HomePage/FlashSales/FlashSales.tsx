@@ -70,7 +70,7 @@ const FlashSales = () => {
                   <h3 className="text-3xl font-semibold font-quickSans mb-5">
                     {item.title}
                   </h3>
-                  <CountDown targetDate={targetDate} />
+                  <CountDown targetDate={targetDate} style={{}} />
                   <button className="flex items-center gap-2 bg-bgPrimaryColor hover:bg-bgHoverColor px-5 py-2 mt-5 rounded-lg text-white text-lg">
                     Shop Now
                     <HiOutlineArrowRight />
