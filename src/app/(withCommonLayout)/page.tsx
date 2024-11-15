@@ -1,4 +1,5 @@
 import Banner from "@/components/UI/HomePage/Banner/Banner";
+import DailyBestSell from "@/components/UI/HomePage/DailyBestSell/DailyBestSell";
 import FirstProductCard from "@/components/UI/HomePage/FirstProductCard/FirstProductCard";
 import FlashSales from "@/components/UI/HomePage/FlashSales/FlashSales";
 import HotDeals from "@/components/UI/HomePage/HotDeals/HotDeals";
@@ -17,6 +18,7 @@ const HomePage = () => {
       <FirstProductCard />
       <OfferBanner />
       <HotDeals />
+      <DailyBestSell />
     </div>
   );
 };

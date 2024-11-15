@@ -34,8 +34,8 @@ const CountDown = ({ targetDate, style }: CountdownProps) => {
 
   if (!timeLeft) return <p>Countdown complete!</p>;
   return (
-    <div className="">
-      <div className="flex space-x-4 text-center text-sm font-medium mb-5">
+    <div className="flex flex-col md:flex-row gap-1">
+      <div className="flex gap-1 text-center text-sm font-medium">
         <div
           className=" flex justify-center items-center gap-2 bg-white  rounded-lg px-3 py-2"
           style={{ ...style }}
@@ -43,7 +43,7 @@ const CountDown = ({ targetDate, style }: CountdownProps) => {
           <p>{timeLeft.days}</p>
           <p>Days</p>
         </div>
-        <p className="font-bold">:</p>
+        {/* <p className="font-bold">:</p> */}
         <div
           className="flex justify-center items-center gap-2 bg-white  rounded-lg px-3 py-2 "
           style={{ ...style }}
@@ -51,7 +51,9 @@ const CountDown = ({ targetDate, style }: CountdownProps) => {
           <p>{timeLeft.hours}</p>
           <p>Hours</p>
         </div>
-        <p className="font-bold">:</p>
+        {/* <p className="font-bold">:</p> */}
+      </div>
+      <div className="flex gap-1 text-center text-sm font-medium">
         <div
           className="flex justify-center items-center gap-2 bg-white  rounded-lg px-3 py-2"
           style={{ ...style }}
@@ -59,16 +61,16 @@ const CountDown = ({ targetDate, style }: CountdownProps) => {
           <p>{timeLeft.minutes}</p>
           <p>Min</p>
         </div>
-        <p className="font-bold">:</p>
-        {/* <div
+        {/* <p className="font-bold">:</p> */}
+        <div
           className="flex justify-center items-center gap-2 bg-white  rounded-lg px-3 py-2"
           style={{ ...style }}
         >
           <p>{timeLeft.seconds}</p>
           <p>Sec</p>
-        </div> */}
+        </div>
       </div>
-      <div className="flex justify-start ">
+      {/* <div className="flex justify-start ">
         <div
           className="flex items-center gap-2 bg-white rounded-lg px-3 py-2 w-[50px] text-center"
           style={{ ...style }}
@@ -76,7 +78,7 @@ const CountDown = ({ targetDate, style }: CountdownProps) => {
           <p>{timeLeft.seconds}</p>
           <p>Sec</p>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

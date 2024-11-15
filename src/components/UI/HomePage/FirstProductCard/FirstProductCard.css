@@ -1,12 +1,17 @@
-/* Remove the progress dots */
-.no-dots::-webkit-slider-runnable-track {
-  background-image: none !important; /* Chrome/Safari */
+/* Hide the thumb (black point) */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 0; /* Set width to zero */
+  height: 0; /* Set height to zero */
 }
 
-.no-dots::-moz-range-track {
-  background-image: none !important; /* Firefox */
+input[type="range"]::-moz-range-thumb {
+  width: 0;
+  height: 0;
 }
 
-.no-dots::-ms-track {
-  background-image: none !important; /* IE/Edge */
+input[type="range"]::-ms-thumb {
+  width: 0;
+  height: 0;
 }

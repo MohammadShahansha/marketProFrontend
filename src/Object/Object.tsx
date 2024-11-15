@@ -7,6 +7,12 @@ import hotDeal1 from "@/assets/hotDeals/product-img1.png";
 import hotDeal2 from "@/assets/hotDeals/product-img2.png";
 import hotDeal3 from "@/assets/hotDeals/product-img3.png";
 import hotDeal4 from "@/assets/hotDeals/product-img4.png";
+
+import dailyBestSell1 from "@/assets/dailyBestSell/best-sell1.png";
+import dailyBestSell2 from "@/assets/dailyBestSell/best-sell2.png";
+import dailyBestSell3 from "@/assets/dailyBestSell/best-sell3.png";
+import dailyBestSell4 from "@/assets/dailyBestSell/best-sell4.png";
+
 export const vegitableProduct = [
   {
     title: "Tailor Farms Broccoli Florets Vegitables",
@@ -24,7 +30,7 @@ export const vegitableProduct = [
     rating: 4.8,
     price: 40.89,
     quantity: 50,
-    sold: 13,
+    sold: 20,
   },
   {
     title: "Tailor Farms Broccoli Florets Vegitables",
@@ -118,6 +124,45 @@ export const hotDealsToday = [
     title: "Tropicana 100% juice, Organs no Polp",
     marketName: "By Lucky Supermarket",
     image: hotDeal4,
+    rating: 4.8,
+    price: 40.89,
+    quantity: 50,
+    sold: 25,
+  },
+];
+
+export const dailyBestSell = [
+  {
+    title: "Tailor Farms Broccoli Florets Vegitables",
+    marketName: "By Lucky Supermarket",
+    image: dailyBestSell1,
+    rating: 4.8,
+    price: 40.89,
+    quantity: 50,
+    sold: 26,
+  },
+  {
+    title: "Tailor Farms Broccoli Florets Vegitables",
+    marketName: "By Lucky Supermarket",
+    image: dailyBestSell2,
+    rating: 4.8,
+    price: 40.89,
+    quantity: 50,
+    sold: 30,
+  },
+  {
+    title: "Tailor Farms Broccoli Florets Vegitables",
+    marketName: "By Lucky Supermarket",
+    image: dailyBestSell3,
+    rating: 4.8,
+    price: 40.89,
+    quantity: 50,
+    sold: 45,
+  },
+  {
+    title: "Tailor Farms Broccoli Florets Vegitables",
+    marketName: "By Lucky Supermarket",
+    image: dailyBestSell4,
     rating: 4.8,
     price: 40.89,
     quantity: 50,
