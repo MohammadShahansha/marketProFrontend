@@ -13,6 +13,13 @@ import dailyBestSell2 from "@/assets/dailyBestSell/best-sell2.png";
 import dailyBestSell3 from "@/assets/dailyBestSell/best-sell3.png";
 import dailyBestSell4 from "@/assets/dailyBestSell/best-sell4.png";
 
+import orgFood1 from "@/assets/orgaanicFood/product-img20.png";
+import orgFood2 from "@/assets/orgaanicFood/product-img21.png";
+import orgFood3 from "@/assets/orgaanicFood/product-img22.png";
+import orgFood4 from "@/assets/orgaanicFood/product-img23.png";
+import orgFood5 from "@/assets/orgaanicFood/product-img24.png";
+import orgFood6 from "@/assets/orgaanicFood/product-img25.png";
+
 export const vegitableProduct = [
   {
     title: "Tailor Farms Broccoli Florets Vegitables",
@@ -167,5 +174,71 @@ export const dailyBestSell = [
     price: 40.89,
     quantity: 50,
     sold: 25,
+  },
+];
+
+export const organicProduct = [
+  {
+    title: "Tailor Farms Broccoli Florets Vegitables",
+    marketName: "By Lucky Supermarket",
+    image: orgFood6,
+    rating: 4.8,
+    price: 40.89,
+    quantity: 50,
+    sold: 13,
+  },
+  {
+    title: "Tailor Farms Broccoli Florets Vegitables",
+    marketName: "By Lucky Supermarket",
+    image: orgFood1,
+    rating: 4.8,
+    price: 40.89,
+    quantity: 50,
+    sold: 20,
+  },
+  {
+    title: "Tailor Farms Broccoli Florets Vegitables",
+    marketName: "By Lucky Supermarket",
+    image: orgFood2,
+    rating: 4.8,
+    price: 40.89,
+    quantity: 50,
+    sold: 13,
+  },
+  {
+    title: "Tailor Farms Broccoli Florets Vegitables",
+    marketName: "By Lucky Supermarket",
+    image: orgFood3,
+    rating: 4.8,
+    price: 40.89,
+    quantity: 50,
+    sold: 13,
+  },
+  {
+    title: "Tailor Farms Broccoli Florets Vegitables",
+    marketName: "By Lucky Supermarket",
+    image: orgFood4,
+    rating: 4.8,
+    price: 40.89,
+    quantity: 50,
+    sold: 13,
+  },
+  {
+    title: "Tailor Farms Broccoli Florets Vegitables",
+    marketName: "By Lucky Supermarket",
+    image: orgFood5,
+    rating: 4.8,
+    price: 40.89,
+    quantity: 50,
+    sold: 13,
+  },
+  {
+    title: "Tailor Farms Broccoli Florets Vegitables",
+    marketName: "By Lucky Supermarket",
+    image: orgFood3,
+    rating: 4.8,
+    price: 40.89,
+    quantity: 50,
+    sold: 13,
   },
 ];

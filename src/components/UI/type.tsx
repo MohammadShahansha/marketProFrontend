@@ -57,3 +57,39 @@ export const hotDealsSettings = {
     },
   ],
 };
+
+export const organicSettings = {
+  infinite: true,
+  speed: 500,
+  slidesToShow: 6,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  nextArrow: <SideNextArrow />,
+  prevArrow: <SidePrevArrow />,
+  responsive: [
+    {
+      breakpoint: 1024, // For screens smaller than 1024px
+      settings: {
+        slidesToShow: 6,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 768, // For screens smaller than 768px
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplaySpeed: 2000,
+      },
+    },
+    {
+      breakpoint: 480, // For screens smaller than 480px
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplaySpeed: 2000,
+      },
+    },
+  ],
+};
