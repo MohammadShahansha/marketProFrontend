@@ -5,6 +5,7 @@ import FirstProductCard from "@/components/UI/HomePage/FirstProductCard/FirstPro
 import FlashSales from "@/components/UI/HomePage/FlashSales/FlashSales";
 import HotDeals from "@/components/UI/HomePage/HotDeals/HotDeals";
 import NewArrivals from "@/components/UI/HomePage/NewArrivals/NewArrivals";
+import NewsLetter from "@/components/UI/HomePage/NewsLetter/NewsLetter";
 import OfferBanner from "@/components/UI/HomePage/OfferBanner/OfferBanner";
 import OrganicFood from "@/components/UI/HomePage/OrganicFood/OrganicFood";
 import ProductImgSlider from "@/components/UI/HomePage/ProductImgSlider/ProductImgSlider";
@@ -29,6 +30,7 @@ const HomePage = () => {
       <ShopByBrand />
       <NewArrivals />
       <Service />
+      <NewsLetter />
     </div>
   );
 };
