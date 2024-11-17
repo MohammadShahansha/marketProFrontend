@@ -1,59 +1,228 @@
 import React from "react";
+import bgImg from "@/assets/footerImg/body-bottom-bg.png";
+import store1 from "@/assets/footerImg/store-img1.png";
+import atore2 from "@/assets/footerImg/store-img2.png";
+import logo from "@/assets/footerImg/logo.png";
+import Image from "next/image";
+import { FaLocationDot } from "react-icons/fa6";
+import { BiSolidPhoneCall } from "react-icons/bi";
+import { MdEmail } from "react-icons/md";
+// import { FaFacebook } from "react-icons/fa6";
+// import { IoLogoTwitter } from "react-icons/io";
+// import { FaInstagramSquare } from "react-icons/fa";
+// import { FaLinkedin } from "react-icons/fa";
+import Link from "next/link";
 
 const Footer = () => {
   return (
     <div>
-      <footer className="footer footer-center bg-base-200 text-base-content rounded p-10">
-        <nav className="grid grid-flow-col gap-4">
-          <a className="link link-hover">About us</a>
-          <a className="link link-hover">Contact</a>
-          <a className="link link-hover">Jobs</a>
-          <a className="link link-hover">Press kit</a>
-        </nav>
-        <nav>
-          <div className="grid grid-flow-col gap-4">
-            <a>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                className="fill-current"
-              >
-                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path>
-              </svg>
-            </a>
-            <a>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                className="fill-current"
-              >
-                <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path>
-              </svg>
-            </a>
-            <a>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                className="fill-current"
-              >
-                <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
-              </svg>
-            </a>
+      <div className="relative bg-white rounded-lg overflow-hidden ">
+        <Image
+          src={bgImg}
+          alt="backgroiund Image"
+          className="h-[280px] md:h-[450px]"
+        />
+        <div className="absolute inset-0 flex flex-col md:flex-row mt-[100px]  gap-5  text-white text-lg px-3 md:px-10 ">
+          <div className="text-black">
+            <div>
+              <Image src={logo} alt="logo" className="w-[200px] h-[40px]" />
+            </div>
+            <div>
+              <p className="text-textPrimaryColor my-5">
+                We are Grocery Shop, an innovative team of food supliers.
+              </p>
+            </div>
+            <div className="flex gap-5 items-center">
+              <div className="bg-bgPrimaryColor text-white text-xl w-[30px] h-[30px] flex justify-center items-center rounded-full">
+                <FaLocationDot />
+              </div>
+              <p>789 Inner Lane, Biyes park, California, USA</p>
+            </div>
+            <div className="flex gap-5 items-center my-5">
+              <div className="bg-bgPrimaryColor text-white text-xl w-[30px] h-[30px] flex justify-center items-center rounded-full">
+                <BiSolidPhoneCall />
+              </div>
+              <p className="hover:text-textSecondaryColor">
+                +00 123 456 789{" "}
+                <span className="text-textSecondaryColor">or</span> +00 987 654
+                012
+              </p>
+            </div>
+            <div className="flex gap-5 items-center">
+              <div className="bg-bgPrimaryColor text-white text-xl w-[30px] h-[30px] flex justify-center items-center rounded-full">
+                <MdEmail />
+              </div>
+              <p className="hover:text-textSecondaryColor">
+                support24@marketpro.com
+              </p>
+            </div>
           </div>
-        </nav>
-        <aside>
-          <p>
-            Copyright © {new Date().getFullYear()} - All right reserved by ACME
-            Industries Ltd
-          </p>
-        </aside>
-      </footer>
+          <div className="text-black flex flex-col">
+            <h2 className="font-semibold font-quickSans text-2xl">
+              Information
+            </h2>
+            <Link
+              href="#"
+              className="text-textPrimaryColor my-3 hover:text-textSecondaryColor"
+            >
+              Become a Vendor
+            </Link>
+            <Link
+              href="#"
+              className="text-textPrimaryColor  hover:text-textSecondaryColor"
+            >
+              Affiliate Program
+            </Link>
+            <Link
+              href="#"
+              className="text-textPrimaryColor my-3  hover:text-textSecondaryColor"
+            >
+              Privacy Policy
+            </Link>
+            <Link
+              href="#"
+              className="text-textPrimaryColor  hover:text-textSecondaryColor"
+            >
+              Our Suppliers
+            </Link>
+            <Link
+              href="#"
+              className="text-textPrimaryColor my-3  hover:text-textSecondaryColor"
+            >
+              Extended Plan
+            </Link>
+            <Link
+              href="#"
+              className="text-textPrimaryColor  hover:text-textSecondaryColor"
+            >
+              Community
+            </Link>
+          </div>
+          <div className="text-black flex flex-col">
+            <h2 className="font-semibold font-quickSans text-2xl">
+              Customer Support
+            </h2>
+            <Link
+              href="#"
+              className="text-textPrimaryColor my-3  hover:text-textSecondaryColor"
+            >
+              Help Center
+            </Link>
+            <Link
+              href="#"
+              className="text-textPrimaryColor hover:text-textSecondaryColor"
+            >
+              Contact Us
+            </Link>
+            <Link
+              href="#"
+              className="text-textPrimaryColor my-3  hover:text-textSecondaryColor"
+            >
+              Report Abuse
+            </Link>
+            <Link
+              href="#"
+              className="text-textPrimaryColor hover:text-textSecondaryColor"
+            >
+              Submit and Dispute
+            </Link>
+            <Link
+              href="#"
+              className="text-textPrimaryColor my-3  hover:text-textSecondaryColor"
+            >
+              Policies & Rules
+            </Link>
+            <Link
+              href="#"
+              className="text-textPrimaryColor  hover:text-textSecondaryColor"
+            >
+              Online Shopping
+            </Link>
+          </div>
+          <div className="text-black flex flex-col">
+            <h2 className="font-semibold font-quickSans text-2xl">
+              My Account
+            </h2>
+            <Link
+              href="#"
+              className="text-textPrimaryColor my-3  hover:text-textSecondaryColor"
+            >
+              My Account
+            </Link>
+            <Link
+              href="#"
+              className="text-textPrimaryColor hover:text-textSecondaryColor"
+            >
+              Order History
+            </Link>
+            <Link
+              href="#"
+              className="text-textPrimaryColor my-3  hover:text-textSecondaryColor"
+            >
+              Shoping Cart
+            </Link>
+            <Link
+              href="#"
+              className="text-textPrimaryColor hover:text-textSecondaryColor"
+            >
+              Compare
+            </Link>
+            <Link
+              href="#"
+              className="text-textPrimaryColor my-3  hover:text-textSecondaryColor"
+            >
+              Help Ticket
+            </Link>
+            <Link
+              href="#"
+              className="text-textPrimaryColor  hover:text-textSecondaryColor"
+            >
+              Wishlist
+            </Link>
+          </div>
+          <div className="text-black flex flex-col">
+            <h2 className="font-semibold font-quickSans text-2xl">
+              Daily Groceries
+            </h2>
+            <Link
+              href="#"
+              className="text-textPrimaryColor my-3  hover:text-textSecondaryColor"
+            >
+              Dairy & Eggs
+            </Link>
+            <Link
+              href="#"
+              className="text-textPrimaryColor hover:text-textSecondaryColor"
+            >
+              Meat & Seafood
+            </Link>
+            <Link
+              href="#"
+              className="text-textPrimaryColor my-3  hover:text-textSecondaryColor"
+            >
+              Breakfast Food
+            </Link>
+            <Link
+              href="#"
+              className="text-textPrimaryColor hover:text-textSecondaryColor"
+            >
+              Household Supplies
+            </Link>
+            <Link
+              href="#"
+              className="text-textPrimaryColor my-3  hover:text-textSecondaryColor"
+            >
+              Bread & Bakery
+            </Link>
+            <Link
+              href="#"
+              className="text-textPrimaryColor  hover:text-textSecondaryColor"
+            >
+              Pantry Staples
+            </Link>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
