@@ -9,6 +9,7 @@ import OfferBanner from "@/components/UI/HomePage/OfferBanner/OfferBanner";
 import OrganicFood from "@/components/UI/HomePage/OrganicFood/OrganicFood";
 import ProductImgSlider from "@/components/UI/HomePage/ProductImgSlider/ProductImgSlider";
 import PromotionalBanner from "@/components/UI/HomePage/PromotionalBanner/PromotionalBanner";
+import Service from "@/components/UI/HomePage/Service/Service";
 import ShopByBrand from "@/components/UI/HomePage/ShopByBrand/ShopByBrand";
 import React from "react";
 
@@ -27,6 +28,7 @@ const HomePage = () => {
       <OrganicFood />
       <ShopByBrand />
       <NewArrivals />
+      <Service />
     </div>
   );
 };
