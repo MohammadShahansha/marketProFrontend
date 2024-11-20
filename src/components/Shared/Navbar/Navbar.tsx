@@ -4,9 +4,15 @@ import { MdKeyboardArrowDown } from "react-icons/md";
 import { MdKeyboardArrowUp } from "react-icons/md";
 import { PiDotsNine } from "react-icons/pi";
 import { FiPhoneCall } from "react-icons/fi";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+// import { useRouter } from "next/navigation";
+// import { useRouter } from "next/router";
 
 const Navbar = () => {
   const [isHover, setIsHover] = useState(false);
+  const pathname = usePathname();
+  const isActive = (path: string) => pathname === path;
   return (
     <div>
       <div className="border-y border-[#ccc]">
@@ -105,20 +111,45 @@ const Navbar = () => {
           <div className="relative hidden lg:flex gap-10 text-[#999] text-xl font-semibold">
             <ul className="flex gap-10">
               <li>
-                <a href="#" className="hover:text-blue-500">
+                <Link
+                  href="/"
+                  className={`hover:text-textSecondaryColor ${
+                    isActive("/") ? "text-textSecondaryColor" : ""
+                  }`}
+                >
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-blue-500">
-                  Shop
-                </a>
+                <Link
+                  href="/shop"
+                  className={`hover:text-textSecondaryColor ${
+                    isActive("/shop") ? "text-textSecondaryColor" : ""
+                  }`}
+                >
+                  shop
+                </Link>
               </li>
 
               <li>
-                <a href="#" className="hover:text-blue-500">
-                  Vendor
-                </a>
+                <Link
+                  href="/vendor"
+                  className={`hover:text-textSecondaryColor ${
+                    isActive("/vendor") ? "text-textSecondaryColor" : ""
+                  }`}
+                >
+                  Vendors
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/contact"
+                  className={`hover:text-textSecondaryColor ${
+                    isActive("/contact") ? "text-textSecondaryColor" : ""
+                  }`}
+                >
+                  Contact Us
+                </Link>
               </li>
             </ul>
           </div>
