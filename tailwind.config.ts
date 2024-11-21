@@ -19,6 +19,7 @@ export default {
       },
       fontFamily: {
         quickSans: ["Quicksand", "sans-serif"],
+        exo: ["'Exo'", "sans-serif"],
       },
     },
   },
