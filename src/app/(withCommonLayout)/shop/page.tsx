@@ -1,9 +1,12 @@
+import ShopBanner from "@/components/UI/Shop/ShopBanner";
+import ShopContent from "@/components/UI/Shop/ShopContent";
 import React from "react";
 
 const AboutPage = () => {
   return (
     <div>
-      <h1>heyyyyyyyyyyyyyyyyyy</h1>
+      <ShopBanner />
+      <ShopContent />
     </div>
   );
 };
