@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import ShortData from "./ShortData";
+import ProductCard from "./ProductCard";
 
 const ResponsiveSidebar: React.FC = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -71,10 +72,7 @@ const ResponsiveSidebar: React.FC = () => {
       {/* Main Content */}
       <div className="w-full">
         <ShortData />
-        <p className="mt-4 text-gray-600">
-          This is the main content area. The sidebar can be toggled on mobile
-          devices.
-        </p>
+        <ProductCard />
       </div>
     </div>
   );

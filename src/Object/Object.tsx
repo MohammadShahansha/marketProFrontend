@@ -262,7 +262,7 @@ export const shopProduct = [
     rating: 4.8,
     price: 40.89,
     quantity: 50,
-    sold: 20,
+    sold: 26,
   },
   {
     title: "Tailor Farms Broccoli Florets Vegitables",
@@ -282,7 +282,7 @@ export const shopProduct = [
     rating: 4.8,
     price: 40.89,
     quantity: 50,
-    sold: 13,
+    sold: 45,
   },
   {
     title: "Tailor Farms Broccoli Florets Vegitables",
