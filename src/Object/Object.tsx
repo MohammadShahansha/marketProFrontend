@@ -20,6 +20,13 @@ import orgFood4 from "@/assets/orgaanicFood/product-img23.png";
 import orgFood5 from "@/assets/orgaanicFood/product-img24.png";
 import orgFood6 from "@/assets/orgaanicFood/product-img25.png";
 
+import vendorLogo1 from "@/assets/vendorImg/vendor-logo1.png";
+import vendorLogo2 from "@/assets/vendorImg/vendor-logo2.png";
+import vendorLogo3 from "@/assets/vendorImg/vendor-logo3.png";
+import vendorLogo4 from "@/assets/vendorImg/vendor-logo1.png";
+import vendorLogo5 from "@/assets/vendorImg/vendor-logo2.png";
+import vendorLogo6 from "@/assets/vendorImg/vendor-logo3.png";
+
 export const vegitableProduct = [
   {
     title: "Tailor Farms Broccoli Florets Vegitables",
@@ -453,5 +460,38 @@ export const shopProduct = [
     price: 40.89,
     quantity: 50,
     sold: 13,
+  },
+];
+
+export const vendorItems = [
+  {
+    vendorName: "lucky market",
+    vendorLogo: vendorLogo1,
+    deleveredBy: "Delivery By 6.15 am",
+  },
+  {
+    vendorName: "lucky market",
+    vendorLogo: vendorLogo2,
+    deleveredBy: "Delivery By 6.15 am",
+  },
+  {
+    vendorName: "lucky market",
+    vendorLogo: vendorLogo3,
+    deleveredBy: "Delivery By 6.15 am",
+  },
+  {
+    vendorName: "lucky market",
+    vendorLogo: vendorLogo4,
+    deleveredBy: "Delivery By 6.15 am",
+  },
+  {
+    vendorName: "lucky market",
+    vendorLogo: vendorLogo5,
+    deleveredBy: "Delivery By 6.15 am",
+  },
+  {
+    vendorName: "lucky market",
+    vendorLogo: vendorLogo6,
+    deleveredBy: "Delivery By 6.15 am",
   },
 ];

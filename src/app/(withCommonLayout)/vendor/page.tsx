@@ -1,9 +1,9 @@
+import Vendor from "@/components/UI/Vendor/Vendor";
 import React from "react";
-
 const VendorPage = () => {
   return (
     <div>
-      <h2>Vendor created successfully</h2>
+      <Vendor />
     </div>
   );
 };
