@@ -34,13 +34,13 @@ const Footer = () => {
                   We are Grocery Shop, an innovative team of food supliers.
                 </p>
               </div>
-              <div className="flex gap-5 items-center">
+              <div className="flex gap-10 items-center">
                 <div className="bg-bgPrimaryColor text-white text-xl w-[30px] h-[30px] flex justify-center items-center rounded-full">
                   <FaLocationDot />
                 </div>
                 <p>789 Inner Lane, Biyes park, California, USA</p>
               </div>
-              <div className="flex gap-5 items-center my-5">
+              <div className="flex gap-10 items-center my-5">
                 <div className="bg-bgPrimaryColor text-white text-xl w-[30px] h-[30px] flex justify-center items-center rounded-full">
                   <BiSolidPhoneCall />
                 </div>
@@ -50,7 +50,7 @@ const Footer = () => {
                   654 012
                 </p>
               </div>
-              <div className="flex gap-5 items-center">
+              <div className="flex gap-10 items-center">
                 <div className="bg-bgPrimaryColor text-white text-xl w-[30px] h-[30px] flex justify-center items-center rounded-full">
                   <MdEmail />
                 </div>
@@ -59,7 +59,7 @@ const Footer = () => {
                 </p>
               </div>
             </div>
-            <div className="flex gap-5">
+            <div className="flex gap-10">
               <div className="text-black flex flex-col">
                 <h2 className="font-semibold font-quickSans text-2xl">
                   Information
@@ -143,7 +143,7 @@ const Footer = () => {
                 </Link>
               </div>
             </div>
-            <div className="flex gap-5">
+            <div className="flex gap-10">
               <div className="text-black flex flex-col">
                 <h2 className="font-semibold font-quickSans text-2xl">
                   My Account
@@ -233,7 +233,7 @@ const Footer = () => {
               Shop on The Go
             </h2>
             <p className="my-5 text-textPrimaryColor text-[16px]">
-              Marketpro App is available. Get it now
+              PetSmart App is available. Get it now
             </p>
             <div className="flex items-center gap-5">
               <Image src={store1} alt="stor image"></Image>
