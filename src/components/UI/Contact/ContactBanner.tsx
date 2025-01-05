@@ -10,16 +10,16 @@ const ContactBanner = () => {
   const isActive = (path: string) => pathname === path;
   return (
     <div className="bg-[#fff4e4] mb-20">
-      <div className="flex items-center justify-between mx-2 md:mx-10 py-8">
+      <div className="flex items-center justify-between mx-2 md:mx-10 py-5">
         <h2 className="text-black font-exo font-semibold text-2xl">Contact</h2>
         <div className="flex items-center">
           <Link
             href="/"
-            className={`hover:text-textSecondaryColor flex items-center ${
+            className={`hover:text-textSecondaryColor flex items-center gap-1 text-black ${
               isActive("/") ? "text-textSecondaryColor" : ""
             }`}
           >
-            <CiHome className="text-black " />
+            <CiHome />
             Home
           </Link>
           <MdKeyboardArrowRight className="text-textPrimaryColor" />
