@@ -17,12 +17,32 @@ const Contact = () => {
           </h2>
           <MPForm onSubmit={onSubmit}>
             <div className="flex flex-col md:flex-row justify-between">
-              <MPInput type="text" name="fullName" label="Full Name" />
-              <MPInput type="text" name="email" label="Email" />
+              <MPInput
+                type="text"
+                name="fullName"
+                label="Full Name"
+                className="md:w-[400px]"
+              />
+              <MPInput
+                type="text"
+                name="email"
+                label="Email"
+                className="md:w-[400px]"
+              />
             </div>
             <div className="flex flex-col md:flex-row justify-between">
-              <MPInput type="text" name="PhoneNumber" label="Phone Number" />
-              <MPInput type="text" name="subject" label="Subject" />
+              <MPInput
+                type="text"
+                name="PhoneNumber"
+                label="Phone Number"
+                className="md:w-[400px]"
+              />
+              <MPInput
+                type="text"
+                name="subject"
+                label="Subject"
+                className="md:w-[400px]"
+              />
             </div>
             <MPInput type="textArea" name="message" label="Message" />
             <div>

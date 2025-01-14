@@ -10,7 +10,10 @@ const UpperNav = () => {
           <Link href="#">About Us</Link>
         </div>
         <div>
-          <Link href="/account" className="flex gap-1 items-center">
+          <Link
+            href="/account"
+            className="flex gap-1 items-center hover:underline"
+          >
             <FaRegUserCircle />
             <p>My Contact</p>
           </Link>

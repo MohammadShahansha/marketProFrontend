@@ -7,9 +7,10 @@ type TInputProps = {
   type: string;
   name: string;
   label: string;
+  className?: string;
 };
 
-const MPInput = ({ type, name, label }: TInputProps) => {
+const MPInput = ({ type, name, label, className }: TInputProps) => {
   const { control } = useFormContext();
   return (
     <Controller
@@ -28,14 +29,18 @@ const MPInput = ({ type, name, label }: TInputProps) => {
               <Input.TextArea
                 {...field}
                 id={name}
-                className="w-full min-h-[100px] border-1 border-[#ccc] focus:border-bgPrimaryColor hover:border-bgPrimaryColor outline-none"
+                className={`w-full min-h-[100px] border-1 border-[#ccc] focus:border-bgPrimaryColor hover:border-bgPrimaryColor outline-none ${
+                  className || ""
+                }`}
               />
             ) : (
               <Input
                 {...field}
                 type={type}
                 id={name}
-                className="w-full md:w-[400px] h-[50px] border-1 border-[#ccc] focus:border-bgPrimaryColor hover:border-bgPrimaryColor outline-none"
+                className={`w-full h-[50px] border-1 border-[#ccc] focus:border-bgPrimaryColor hover:border-bgPrimaryColor outline-none ${
+                  className || ""
+                }`}
               />
             )}
             {error && <small className="text-red-600"> {error.message}</small>}
