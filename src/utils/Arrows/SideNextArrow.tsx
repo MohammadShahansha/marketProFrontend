@@ -13,8 +13,8 @@ const SideNextArrow = (props: any) => {
       onMouseEnter={() => setIsHover(true)}
       onMouseLeave={() => setIsHover(false)}
       style={{
-        width: "40px",
-        height: "40px",
+        width: "35px",
+        height: "35px",
         // backgroundColor: "green",
         backgroundColor: isHover ? "#299e60" : "white",
         color: isHover ? "white" : "#999",

@@ -29,7 +29,10 @@ const PromotionalBanner = () => {
     <div className="md:mx-7">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         {imageData.map((data, index) => (
-          <div key={index} className="relative h-64  rounded-lg  flex ">
+          <div
+            key={index}
+            className="relative h-64  rounded-lg  flex mt-5 md:mt-0 px-2 md:px-0"
+          >
             <div>
               <Image src={data.imageSrc} alt="promotional image" />
             </div>

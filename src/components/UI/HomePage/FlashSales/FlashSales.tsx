@@ -35,9 +35,9 @@ const FlashSales = () => {
     },
   ];
   return (
-    <div className="mt-24 md:mx-4">
+    <div className="mt-24 md:mx-4 mx-2">
       <div className="flex justify-between md:px-3 mb-10">
-        <div className="font-semibold font-quickSans text-3xl">
+        <div className="font-semibold font-quickSans text-lg md:text-3xl">
           Flash Salsh Today
         </div>
         <div className=" font-semibold text-textPrimaryColor cursor-pointer hover:text-textSecondaryColor mr-24">
@@ -48,12 +48,12 @@ const FlashSales = () => {
         {imgList.map((item, index) => (
           <div key={index} className="px-3">
             <div
-              className="relative flex items-center justify-center gap-5 bg-cover bg-center w-full h-[300px] rounded-2xl overflow-hidden"
+              className="relative flex items-center justify-center gap-5 bg-cover bg-center w-full h-[320px] md:h-[300px] rounded-2xl overflow-hidden"
               style={{
                 backgroundImage: `url(${item.bgImg.src})`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
-                height: "300px",
+                // height: "300px",
               }}
             >
               <div className="flex flex-col md:flex-row items-center gap-5 rounded-lg">

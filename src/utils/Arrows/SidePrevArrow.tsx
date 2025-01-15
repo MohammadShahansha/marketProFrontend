@@ -12,8 +12,8 @@ const SidePrevArrow = (props: any) => {
       onMouseLeave={() => setIsHover(false)}
       onClick={onClick}
       style={{
-        width: "40px",
-        height: "40px",
+        width: "35px",
+        height: "35px",
         backgroundColor: isHover ? "#299e60" : "white",
         color: isHover ? "white" : "#999",
         display: "flex",

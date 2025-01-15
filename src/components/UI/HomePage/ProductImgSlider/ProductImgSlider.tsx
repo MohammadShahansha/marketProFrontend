@@ -40,6 +40,38 @@ const ProductImgSlider = () => {
     infinite: true,
     nextArrow: <NextArrow />, // pass function references, not JSX
     prevArrow: <PrevArrow />,
+    responsive: [
+      {
+        breakpoint: 1440,
+        settings: {
+          slidesToShow: 8,
+        },
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 8,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 4,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 320,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   };
   return (
     <div className="mb-[-30px] md:mx-7">

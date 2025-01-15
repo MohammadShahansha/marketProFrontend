@@ -55,14 +55,14 @@ const Banner = () => {
       <Slider {...settings}>
         {slidesData.map((slide, index) => (
           <div key={index} className="flex items-center justify-center ">
-            <div className="flex items-center justify-between mx-auto h-[500px] p-4 rounded-lg md:mx-20">
+            <div className="flex flex-col md:flex-row items-center justify-between mx-auto md:h-[500px] md:p-4 rounded-lg md:mx-20">
               {/* Text Section */}
-              <div className="w-3/5 p-4">
-                <h2 className="text-[60px] font-quickSans text-[#121535] font-semibold">
+              <div className="md:w-3/5 p-2 md:p-4">
+                <h2 className="text-[30px] md:text-[60px] font-quickSans text-[#121535] font-semibold">
                   Daily Grocery Order and Get Express Delevery
                 </h2>
 
-                <button className="flex items-center gap-2 bg-bgPrimaryColor hover:bg-bgHoverColor px-10 py-3 mt-10 rounded-md text-white text-lg">
+                <button className="flex items-center gap-2 bg-bgPrimaryColor hover:bg-bgHoverColor md:px-10 py-3 mt-10 rounded-md text-white text-lg">
                   Explore Shop <FiShoppingCart />
                 </button>
               </div>
