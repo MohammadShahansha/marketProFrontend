@@ -154,7 +154,7 @@ const Navbar = () => {
             </ul>
           </div>
 
-          <div className="py-3  bg-[#299e60] hover:bg-[#258e56] text-white">
+          <div className="py-3 hidden md:block bg-[#299e60] hover:bg-[#258e56] text-white">
             <div className="flex items-center gap-2 px-3 ">
               <FiPhoneCall />
               <h2 className="text-2xl font-semibold">01- 234 567 890</h2>

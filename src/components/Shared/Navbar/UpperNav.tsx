@@ -7,7 +7,9 @@ const UpperNav = () => {
     <div className="bg-[#299e60]">
       <div className=" w-full flex justify-between px-1 md:px-10 py-1 text-white">
         <div>
-          <Link href="#">About Us</Link>
+          <Link href="#" className="hover:underline">
+            About Us
+          </Link>
         </div>
         <div>
           <Link
